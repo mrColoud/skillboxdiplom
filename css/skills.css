@@ -1,0 +1,214 @@
+.skills {
+  background-color: #ffffff;
+  ;
+}
+
+/* Что я делаю - блок */
+
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Что я делаю - заголовок */
+
+.skills_container h2 {
+  margin-top: 87px;
+
+  font-weight: 700;
+  font-size: 54px;
+}
+
+/* Что я делаю - контейнер */
+
+.skills-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 88px;
+}
+
+/* Что я делаю */
+
+.skills-box div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Блоки что я делаю */
+
+.layout {
+  max-width: 257px;
+}
+
+.adaptive-layout {
+  max-width: 272px;
+}
+
+.frontend {
+  max-width: 201px;
+}
+
+.layout-correction {
+  max-width: 247px;
+}
+
+/* Что я делаю - описание */
+
+.skills-box p {
+  margin-top: 17px;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #8993ad;
+}
+
+/*Что я делаю -  кнопка*/
+
+.price-btn {
+  margin-top: 92px;
+  margin-bottom: 104px;
+}
+
+@media (max-width: 1024px) {
+  /* Что я делаю - заголовок \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+  .skills_container h2 {
+    margin-left: -27px;
+
+    font-size: calc(30px + 24 * ((100vw - 320px) / (1024 - 320)));
+  }
+
+  /* Что я делаю - заголовок \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+  .skills_container p {
+    font-size: calc(16px + 4 * ((100vw - 320px) / (1024 - 320)));
+  }
+
+  /* Что я делаю - контейнер */
+
+  .skills-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 650px;
+  }
+
+  /* Блоки что я делаю */
+
+  .layout {
+    max-width: 257px;
+  }
+
+  .adaptive-layout {
+    max-width: 272px;
+  }
+
+  .frontend {
+    max-width: 255px;
+  }
+
+  .layout-correction {
+    max-width: 270px;
+  }
+
+  /* Коррекция колонок */
+
+  .m-correction-columns {
+    margin-top: 78px;
+  }
+
+  /* Кнопка Узнать стоимость */
+
+  .price-btn {
+    margin-top: 93px;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Что я делаю - контейнер */
+
+  .skills-box {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 43px;
+  }
+
+  /* Что я делаю - заголовок*/
+
+  .skills_container h2 {
+    margin: auto;
+    margin-top: 32px;
+  }
+
+  /* Что я делаю - заголовок */
+
+  .skills_container p {
+    line-height: 25px;
+  }
+
+  /* Что я делаю*/
+
+  .skills-box div {
+    width: 270px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  /* Коррекция колонок */
+
+  .m-correction-columns {
+    margin-top: 0;
+  }
+
+  /* Кнопка узнать цену */
+
+  .price-btn {
+    margin-top: 3px;
+
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 530px) {
+  /* Кнопка "Узнать стоимость" */
+
+  .price-btn {
+    margin-top: 3px;
+    margin-bottom: 51px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Что я делаю*/
+
+  .skills-box div {
+    margin-bottom: 48px;
+  }
+
+  /* Что я делаю - изображения */
+
+  .skills-box div img {
+    width: 19vw;
+    margin: 0 auto;
+  }
+
+  /* Что я делаю - описание */
+
+  .skills-box div p {
+    margin-top: 13px;
+  }
+
+  /* Коррекция колонок */
+
+  .m-correction-columns {
+    display: none;
+  }
+}

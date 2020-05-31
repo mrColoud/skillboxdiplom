@@ -1,0 +1,93 @@
+.fly-tag__bottom {
+  position: absolute;
+
+  color: white;
+}
+
+.braces_bottom {
+  top: 63px;
+  left: 121px;
+
+  font-weight: 700;
+  font-size: 45px;
+
+  transform: rotate(30deg);
+}
+
+.braces_2_bottom {
+  right: 100px;
+  bottom: 51px;
+
+  font-weight: 700;
+  font-size: 48px;
+
+  transform: rotate(-20deg);
+}
+
+.sharp_bottom {
+  bottom: 51px;
+  left: 237px;
+
+  font-weight: 500;
+  font-size: 55px;
+
+  transform: rotate(18deg);
+}
+
+.div_bottom {
+  right: 402px;
+  bottom: 19px;
+
+  font-weight: 700;
+  font-size: 35px;
+
+  transform: rotate(20deg);
+}
+
+.closed_tag_bottom {
+  top: 77px;
+  right: 199px;
+
+  font-weight: 700;
+  font-size: 38px;
+
+  transform: rotate(-22deg);
+}
+
+@media (max-width: 1500px) {
+  .braces_bottom {
+    top: 22px;
+    left: 155px;
+
+    font-size: 33px;
+
+    transform: rotate(27deg);
+  }
+
+  .div_bottom {
+    right: 453px;
+    bottom: 30px;
+
+    font-size: 25px;
+  }
+
+  .closed_tag_bottom {
+    top: auto;
+    right: 94px;
+    bottom: 32px;
+  }
+
+  .braces_2_bottom {
+    display: none;
+  }
+
+  .sharp_bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  .fly-tag__bottom {
+    display: none;
+  }
+}

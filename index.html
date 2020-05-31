@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diplom</title>
+  <link rel="preload" href="fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/bio.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="css/price.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/tags_top.css" />
+  <link rel="stylesheet" href="css/tags_bottom.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <script src="js/jquery-3.4.1.min.js" defer></script>
+  <script src="js/slick.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <header class="header container">
+    <button class="header-nav-btn" aria-label="откорыть меню"></button>
+
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item"><a href="#skills">Услуги</a></li>
+        <li class="header-nav__item"><a href="#portfolio">Портфолио</a></li>
+        <li class="header-nav__item"><a href="#price">Стоимость</a></li>
+      </ul>
+    </nav>
+
+    <a class="phone" href="tel:+74999955577"><b>+7 (499) 995-55-77</b></a>
+
+    <button class="callback" aria-label="заказать звонок">Заказать звонок</button>
+
+    <button class="callback-mobile" aria-label="заказать звонок"></button>
+  </header>
+
+  <main>
+    <section class="first-screen first">
+      <span class="fly-tag braces">{ }</span>
+      <span class="fly-tag sharp">#</span>
+      <span class="fly-tag div_1">&lt;div&gt;</span>
+      <span class="fly-tag div_2">&lt;div&gt;</span>
+      <span class="fly-tag closed_tag_1">&lt;/&gt;</span>
+      <span class="fly-tag closed_tag_2">&lt;/&gt;</span>
+      <div class="first-screen_container container">
+        <div class="bio">
+          <h2>Дмитрий Алексеев</h2>
+          <p>Frontend-разработчик и веб-верстальщик</p>
+          <button class="btn more-info" aria-label="узнать больше">Узнать больше</button>
+        </div>
+
+        <img class="developer-image" src="img/developer.webp" alt="фото разработчика" />
+      </div>
+    </section>
+
+    <section class="bio_mobile container">
+      <h2>Дмитрий Алексеев</h2>
+      <p>Frontend-разработчик и веб-верстальщик</p>
+      <button class="btn more-info" aria-label="узнать больше">Узнать больше</button>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="skills_container container">
+        <h2>Что я делаю</h2>
+
+        <div class="skills-box">
+          <div class="layout">
+            <img src="img/service_code.png" alt="Вёрстка" />
+
+            <p>
+              Вёрстка лендинг–страниц и сайтов любой сложности
+            </p>
+          </div>
+
+          <div class="adaptive-layout">
+            <img src="img/service_adaptive.png" alt="Адаптив" />
+
+            <p>
+              Адаптивная вёрстка под все браузеры и устройства
+            </p>
+          </div>
+
+          <div class="frontend m-correction-columns">
+            <img src="img/service_frontend.png" alt="Фронтэнд" />
+
+            <p>
+              Frontend–разработка и программирование
+            </p>
+          </div>
+
+          <div class="layout-correction m-correction-columns">
+            <img src="img/service_correction.png" alt="Исправление вёрстки" />
+
+            <p>
+              Исправление и доработка существующей вёрстки
+            </p>
+          </div>
+        </div>
+
+        <button class="btn price-btn" aria-label="узнать стоимость">
+          Узнать cтоимость
+        </button>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio container">
+      <h2>Примеры моих работ</h2>
+
+      <div class="slider">
+        <div class="slider__item">
+          <img src="img/portfolio_child.png" alt="ребёнок" />
+          <p>Сайт магазина детской одежды</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="img/portfolio_fisher.png" alt="рыбак" />
+          <p>Сайт магазина «Рыболов»</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="img/portfolio_fisher.png" alt="рыбак" />
+          <p>Сайт магазина «Рыболов»</p>
+        </div>
+
+        <div class="slider__item">
+          <img src="img/portfolio_psychologist.png" alt="психолог" />
+          <p>Сайт психолога Веры Антоновой</p>
+        </div>
+      </div>
+
+      <button class="btn order" aria-label="заказать проект">
+        <span>Заказать проект</span>
+      </button>
+    </section>
+
+    <section id="price" class="price">
+      <span class="fly-tag__bottom braces_bottom">{ }</span>
+      <span class="fly-tag__bottom braces_2_bottom">{ }</span>
+      <span class="fly-tag__bottom sharp_bottom">#</span>
+      <span class="fly-tag__bottom div_bottom">&lt;div&gt;</span>
+      <span class="fly-tag__bottom closed_tag_bottom">&lt;/&gt;</span>
+      <div class="price_container container">
+        <h2 class="price_heading">
+          Адаптивная вёрстка под все устройства <br />
+          и браузеры от 1000 рублей всего за 4 часа.*
+        </h2>
+
+        <div class="note">
+          <span class="pre_note">*</span>
+          <p class="price_note">
+            Срок и стоимость могут отличаться от заявленных и рассчитываются
+            индивидуально, в зависимости от сложности задач.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer_container container">
+      <nav class="footer-nav">
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="#skills">Услуги</a></li>
+          <li class="footer-nav__item"><a href="#portfolio">Портфолио</a></li>
+          <li class="footer-nav__item"><a href="#price">Стоимость</a></li>
+        </ul>
+      </nav>
+
+      <div class="contacts">
+        <a class="footer-phone" href="tel:+74999955577">
+          <i class="fa fa-phone" aria-hidden="true"></i>
+          +7 (499) 995-55-77</a>
+        <a class="mail" href="mailto:dmitry@alekseev.com">
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          dmitry@alekseev.com</a>
+      </div>
+
+      <div class="social">
+        <button class="callback_footer btn" aria-label="заказать звонок">Заказать звонок</button>
+        <ul class="social__list">
+          <li class="social__item_vk"><a href="#" aria-label="вконтакте"></a></li>
+          <li class="social__item_fb"><a href="#" aria-label="фейсбук"></a></li>
+          <li class="social__item_tw"><a href="#" aria-label="твиттер"></a></li>
+          <li class="social__item_in"><a href="#" aria-label="инстаграм"></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://use.fontawesome.com/9f6c4f69a0.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+
+  background-color: #fbfbfb;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+
+  border: 0 !important;
+
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Roboto";
+
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("../fonts/Roboto-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Roboto-Black";
+
+  font-display: swap;
+  src: url("./fonts/Roboto-Black.woff") format("woff"),
+  url("./fonts/Roboto-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Roboto";
+
+  font-display: swap;
+  src: url("../fonts/Roboto-Medium.woff") format("woff2"),
+  url("../fonts/Roboto-Medium.woff2") format("woff");
+}
+
+@font-face {
+  font-style: bold;
+  font-weight: 700;
+  font-family: "Roboto";
+
+  font-display: swap;
+  src: url("../fonts/Roboto-Bold.woff") format("woff2"),
+  url("../fonts/Roboto-Bold.woff2") format("woff");
+}
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Media <1024px */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+/* Media <400px */
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,204 @@
+/* Слайдер */
+.slick-slider {
+  position: relative;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  width: 100%;
+}
+
+/* Слайд */
+.slick-slide {
+  margin: 0 15px;
+}
+
+/* Стрелка */
+.slick-arrow {
+  position: absolute;
+  top: 30.2%;
+  z-index: 10;
+
+  width: 88px;
+  height: 88px;
+
+  font-size: 0;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+  left: -44px;
+
+  background-image: url("../img/arrow-left.png");
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+  right: -44px;
+
+  background-image: url("../img/arrow-right.png");
+}
+
+/* Точки (булиты) */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  list-style: none;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #ff4e2e;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  width: 18px;
+  height: 18px;
+
+  font-size: 0;
+
+  background-color: #ebebeb;
+  border-radius: 50%;
+}
+
+.portfolio {
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio h2 {
+  margin-top: 87px;
+  margin-bottom: 101px;
+
+  font-weight: 700;
+  font-size: 54px;
+  text-align: center;
+}
+
+.portfolio p {
+  margin-top: 31px;
+
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #8993ad;
+
+  visibility: visible;
+}
+
+.order {
+  display: block;
+  margin: 94px auto 102px auto;
+}
+
+
+@media (max-width: 1300px) {
+  .slick-dots {
+    margin-top: 96px;
+  }
+
+  .slick-dots li {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slick-slide {
+    margin: 0 1.758vw;
+  }
+
+  .slick-dots {
+    margin-top: 96px;
+  }
+
+  .slick-dots li {
+    padding: 0 15px;
+  }
+
+  .slider__item img {
+    width: 44.7vw;
+    height: 34.8vw;
+
+    object-fit: cover;
+  }
+
+  .portfolio h2 {
+    margin-bottom: 100px;
+
+    font-size: calc(30px + 24 * ((100vw - 320px) / (1024 - 320)));
+  }
+
+  .portfolio p {
+    margin-top: 18px;
+
+    font-weight: 500;
+    font-size: calc(18px + 7 * ((100vw - 320px) / (1024 - 320)));
+    text-align: center;
+    color: #8993ad;
+  }
+
+  .order {
+    margin: 99px auto 101px auto;
+  }
+}
+
+@media (max-width: 770px) {
+  .slick-slide {
+    margin: 0 10px;
+  }
+
+  .slick-dots {
+    margin-top: 36px;
+  }
+
+  .slick-dots li button {
+    width: 10px;
+    height: 12px;
+
+    font-size: 0;
+
+    background-color: #ebebeb;
+    border-radius: 50%;
+  }
+
+  .slider__item {
+    width: 88.1vw;
+    height: 89.688vw;
+  }
+
+  .slider__item img {
+    width: 88.1vw;
+    height: 78.438vw;
+
+    object-fit: cover;
+  }
+
+  .portfolio h2 {
+    margin-top: 43px;
+    margin-bottom: 42px;
+  }
+
+  .portfolio p {
+    width: 88.1vw;
+    margin-top: 13px;
+
+    font-weight: 500;
+    text-align: center;
+    color: #8993ad;
+  }
+
+  .order {
+    margin: 52px auto 51px auto;
+  }
+}

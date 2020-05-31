@@ -1,0 +1,213 @@
+/* Хедер десктоп */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+/* Навигация (список) */
+
+.header-nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.header-nav__item a {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* Телефон */
+
+.phone {
+  margin-top: -3px;
+  margin-left: auto;
+
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.phone:hover {
+  color: #f82370;
+
+  transition: 0.3s;
+}
+
+/* "Заказать звонок" */
+
+.callback {
+  width: 207px;
+  height: 45px;
+  margin-left: 28px;
+
+  font-size: 17px;
+  color: #f53f4f;
+
+  border: 1px solid #f82370;
+}
+
+/* Подсветка кнопки "Заказать звонок" */
+
+.callback:hover {
+  color: #ffffff;
+
+  background-color: #f82370;
+  border: 1px solid #f82370;
+
+  transition: 0.3s;
+}
+
+/* JS activation*/
+
+
+/* Подсветка меню */
+
+.header-nav__item a:hover {
+  color: #fc557c;
+
+  border-bottom: 1px solid #fc557c;
+
+  transition: 0.3s;
+}
+
+/* Подсветка кнопки "Заказать звонок" */
+
+.callback:hover {
+  color: #ffffff;
+
+  background-color: #f82370;
+  border: 1px solid #f82370;
+
+  transition: 0.3s;
+}
+
+/* Media >1024px */
+
+@media (min-width: 1025px) {
+  /*Кнопка навигации*/
+
+  .header-nav-btn {
+    display: none;
+  }
+
+  /* "Заказать звонок" */
+
+  .callback-mobile {
+    display: none;
+  }
+}
+
+/* Media <1024px */
+
+@media (max-width: 1024px) {
+  /*Кнопка навигации*/
+
+  .header-nav-btn {
+    width: 45px;
+    height: 32px;
+
+    background-image: url("../img/mobile_menu.png");
+  }
+
+  /*Кнопка закрыть навигацию*/
+
+  .close {
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/mobile-menu_close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+
+
+  .active {
+    display: flex;
+  }
+
+  /* "Заказать звонок" */
+
+  .callback-mobile {
+    display: none;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .header-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 50vw;
+  }
+
+  .header-nav__item a {
+    font-size: 2.5vw;
+  }
+
+  .phone {
+    font-size: calc(18px + 7 * ((100vw - 320px) / (1024 - 320)));
+  }
+}
+
+@media (max-width: 850px) {
+  .phone {
+    margin-top: -3px;
+    margin-left: 0;
+  }
+
+  .callback {
+    display: none;
+  }
+
+  .callback-mobile {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+    background-image: url("../img/m_ask-callback.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    margin-top: 23px;
+  }
+
+  .header-nav-btn {
+    width: 25px;
+    height: 32px;
+
+    background-image: url("../img/mobile_menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .close {
+    width: 25px;
+    height: 32px;
+
+    background-image: url("../img/mobile-menu_close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  .callback-mobile {
+    display: block;
+    width: 26px;
+    height: 26px;
+
+    background-image: url("../img/m_ask-callback.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

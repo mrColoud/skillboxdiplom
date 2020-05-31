@@ -1,0 +1,197 @@
+/* Фон 1ой секции */
+.first-screen {
+  position: relative;
+
+  margin-top: 56px;
+  overflow: visible;
+
+  background-image: url("../img/ellipse.svg");
+  background-repeat: no-repeat;
+  background-position: 100.9% 100%;
+  background-size: contain;
+}
+
+/* Контейнер 1ой секции" */
+
+.first-screen_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Описание */
+
+.bio {
+  margin-bottom: 83px;
+}
+
+/* Надпись "Дмитрий Алексеев" */
+
+.bio h2 {
+  margin-bottom: 15px;
+
+  font-weight: 900;
+  font-size: calc(54px + 26 * ((100vw - 1024px) / (1920 - 1024)));
+}
+
+/* Профессия */
+
+.bio p {
+  padding-bottom: 45px;
+
+  font-weight: 400;
+  font-size: 25px;
+  color: #8993ad;
+}
+
+/* Кнопка "Узнать больше" */
+
+
+
+/* Изображение Разработчика */
+
+.developer-image {
+  margin-right: -81px;
+}
+
+/* Описание <770px */
+
+.bio_mobile {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  .developer-image {
+    margin-right: 20px;
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  /* Фон 1ой секции */
+
+  .first-screen {
+    margin-top: 57px;
+
+    background-image: url("../img/ellipse_pad.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: auto;
+  }
+
+  /* Изображение Разработчика */
+
+  .developer-image {
+    margin-right: -2px;
+  }
+
+  /* Описание */
+
+  .bio {
+    margin-bottom: 49px;
+  }
+
+  /* Надпись "Дмитрий Алексеев" */
+
+  .bio h2 {
+    margin-top: 13px;
+  }
+
+  /* Кнопка "Узнать больше" */
+
+  .more-info {
+    margin-bottom: 7px;
+  }
+}
+
+@media (max-width: 850px) {
+  /* Кнопка "Узнать больше" */
+
+  .more-info {
+    margin-bottom: 13px;
+  }
+}
+
+@media (max-width: 770px) {
+  /* Фон 1ой секции */
+
+  .first-screen {
+    margin-top: 83px;
+    overflow: hidden;
+
+    background-image: url("../img/ellipse.svg");
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    background-position-y: 35px;
+    background-size: cover;
+  }
+
+  /* Описание */
+
+  .bio {
+    display: none;
+  }
+
+  /* Изображение Разработчика */
+
+  .developer-image {
+    width: 81.5%;
+    margin-left: 57px;
+  }
+
+  /* Описание <770px */
+
+  .bio_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  /* Надпись "Дмитрий Алексеев" <770px */
+
+  .bio_mobile h2 {
+    font-size: calc(30px + 24 * ((100vw - 320px) / (1024 - 320)));
+  }
+
+  /* Профессия <770px*/
+
+  .bio_mobile p {
+    width: 80vw;
+    margin-top: 8px;
+
+    font-size: calc(16px + 14 * ((100vw - 320px) / (1024 - 320)));
+    line-height: 7.8vw;
+    text-align: center;
+    color: #8993ad;
+  }
+
+  /* Кнопка "Узнать больше" */
+
+  .more-info {
+    margin-top: 23px;
+  }
+}
+
+@media (max-width: 530px) {
+  /* Фон 1ой секции */
+
+  .first-screen {
+    margin-top: 79px;
+    overflow: visible;
+
+    background-image: url("../img/ellipse.svg");
+    background-repeat: no-repeat;
+    background-position-x: 60%;
+    background-position-y: 40px;
+    background-size: cover;
+  }
+
+  /* Кнопка "Узнать больше" */
+
+  .more-info {
+    margin-top: 21px;
+  }
+}
